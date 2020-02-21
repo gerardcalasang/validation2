@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation 2</title>
+    <link rel = "stylesheet" href = "css.css">
+    <script src = "js.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset id = "form">
+        <table>
+        <tr>
+            <td>Username: </td>
+            <td><input type = "text" id = "login" onchange = "loginValidate()" pattern = ".{5,}" required></td>
+            <td><span id = "logincheck"></span></td>
+        </tr>
+            <td>Password: </td>
+            <td><input type = "password" id = "password"  onchange= "passwordStrength()" pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <!--pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"--></td>
+            <td><span id = "strength"></span></td>
+        <tr>
+            <td>Confirm Password: </td>
+            <td><input type = "password" id = "passwordC" onchange="passwordValidate()" required></td>
+            <td><span id = "passwordMatch"></span></td>
+        </tr>
+        <tr>
+            <td>Gender: </td>
+            <td><select id = "gender" onchange = "genderValidate()" required>
+                <option value = "invalid" selected disabled hidden>Select Gender</option>
+                <option value = "male">Male</option>
+                <option value = "female">Female</option>
+                <option value = "others">Others..</option>
+                </select></td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td>Email:</td>
+            <td><input type = "email" id = "email" onchange = "emailValidate()" required></td>
+            <td><span id = "emailcheck"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type = "button" id = "submit" value = "Register" onclick = "validate()"></td>
+            <td></td>
+        </tr>           
+        
+    </table>
+    </fieldset>
+    </form>
+</body>
+</html>

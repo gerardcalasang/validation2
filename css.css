@@ -1,0 +1,25 @@
+input, select {
+    border-radius: 1cm;
+    color: rgb(166, 0, 216);
+    font-size: 15pt;
+}
+
+
+#form {
+    margin-left: 4in;
+    margin-right: 4in;
+    margin-top: 2in;
+    margin-bottom: 2in;
+    color: lightseagreen;
+    border-color: lightseagreen;
+    border-radius: 1cm;
+    font-family: sans-serif;
+    padding: 0.5cm;
+    text-align: left;
+    font-size: 20pt;
+}
+
+body {
+    background-color: black;
+}
+
